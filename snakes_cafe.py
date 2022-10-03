@@ -45,11 +45,11 @@ def acknowledgment(x, q):
     for i in Menu:
         if a==0:
              if Menu[i] == 1:
-                q += "%s order of %s " % (Menu[i], i)
+                q += "** %s order of %s " % (Menu[i], i)
                 a+=1
                # print("%s order of %s have been added to you meal"%(Menu[i],i))       
              elif Menu[i] > 1:
-                 q += "%s orders of %s " % (Menu[i], i)
+                 q += "** %s orders of %s " % (Menu[i], i)
                  a+=1
             #    print("%s orders of %s have been added to you meal"%(Menu[i],i))
         else :
@@ -62,7 +62,7 @@ def acknowledgment(x, q):
 
            
 
-    q += "have been added to you meal"
+    q += "have been added to you meal **"
     print(q)
 
 
@@ -93,4 +93,4 @@ while True:
         if order == "quit":
             break
         else:
-            print("Please enter from the Menu")
+            print("** Please enter from the Menu **")
